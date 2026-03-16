@@ -1,11 +1,8 @@
 from pathlib import Path
 import os
 import dj_database_url
-from dotenv import load_dotenv
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-load_dotenv(os.path.join(BASE_DIR, ".env"))
-
 SECRET_KEY = os.getenv("SECRET_KEY", "fallback-secret-key")
 DEBUG = os.getenv("DEBUG", "False").lower() in ["true", "1"]
 ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "*").split(",")
