@@ -2,11 +2,11 @@ FROM python:3.12-slim
 
 WORKDIR /app
 
-COPY hrms_django/requirements.txt .
+COPY requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY hrms_django/ .
+COPY . .
 
 RUN python manage.py collectstatic --noinput
 
