@@ -2,7 +2,6 @@ HRMS App:
 
 A simple Human Resource Management System (HRMS) built with Django (backend) and React (frontend). It helps manage employees, attendance, and provides REST API endpoints.
 
-
 Features:
 
 *Employee management
